@@ -5,6 +5,7 @@
 body{
     margin: 0;
     background-color: #EFEFEF;
+    color: $color-primary;
     font-family: $primary-font-family;
 }
 
@@ -15,4 +16,27 @@ button{
 .wrapper{
     width: 1150px;
     margin: 0 auto;
+}
+
+
+.ss-btn{
+    border: none;
+    font-family: $primary-font-family;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    color: #FFF;
+    background-color: $color-secondary;
+    font-weight: lighter;
+    width: 100%;
+    padding: 10px;
+    .ss-btn-icon{
+        height: 20px;
+        width: auto;
+        display: inline-block;
+        margin-right: 15px;
+    }
+    &.primary{
+        background-color: $color-primary;
+    }
 }
