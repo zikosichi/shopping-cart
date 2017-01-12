@@ -1,0 +1,25 @@
+<div class="wrapper">
+	<div class="filter">
+		<a href="#" class="active"> ALL </a>
+		<a href="#"> MEN </a>
+		<a href="#"> WOMEN </a>
+		<a href="#"> KIDS </a>
+	</div>
+<router-outlet></router-outlet>
+	<div class="products-wrapper">
+
+		<!--<div class="product-item" *ngFor="let poduct of products">-->
+		<div class="product-item" *ngFor="let poduct of [1,2,3,4,5,6]; let i = index"  [routerLink]="['product-details', i]">
+			<img src="">
+			<div class="product-details">
+				<h1>Fashion Coat</h1>
+				<div class="footer">
+					<h1 class="price">AED 45</h1>
+					<button>Add to Bag</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="product-item-fix"  *ngFor="let poduct of [1,2,3,4,5,6,7,8]"></div>
+	</div>
+</div>

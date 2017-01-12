@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Oswald:300,400,700');
+@import 'variables';
+
+
+body{
+    margin: 0;
+    background-color: #EFEFEF;
+    font-family: $primary-font-family;
+}
+
+button{
+    font-family: $primary-font-family;
+}
+
+.wrapper{
+    width: 1150px;
+    margin: 0 auto;
+}

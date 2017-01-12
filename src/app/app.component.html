@@ -1,3 +1,29 @@
-<h1>
-  {{title}}
-</h1>
+<div class="page">
+	<nav class="main-nav">
+		<div class="wrapper">
+			<div class="logo">
+				<h1>
+					Simple Shopping
+				</h1>
+			</div>
+
+			<div class="auth">
+				<a href="#"> Log In </a>
+				<a href="#"> Register </a>
+			</div>
+
+			<button class="checkout">
+				Checkout
+				<span class="icon">
+					<img src="./assets/shopping-bag.svg" alt="">
+					<span class="badge"> 3 </span>
+				</span>
+			</button>
+		</div>
+	</nav>
+
+	<div class="main-content">
+		<router-outlet></router-outlet>
+	</div>
+
+</div>

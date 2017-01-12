@@ -1,0 +1,79 @@
+@import '../../../variables';
+
+.pd-wrapper{
+    position: fixed;
+    height: calc(100% - 80px);
+    // height: calc(100% - $main-nav-height);
+    width: 100%;
+    top: $main-nav-height;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    align-content: stretch;
+    .pd-photos{
+        min-width: 0;
+        flex-basis: 50%;
+        background-color: lightblue;
+
+        animation-name: slideDownAnimation;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+        animation-duration: 1.0s;
+    }
+    .pd-details{
+        min-width: 0;
+        flex-basis: 50%;
+        background-color: lightgreen;
+        display: flex;
+        align-content: stretch;
+        
+        animation-name: slideUpAnimation;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+        animation-duration: 1.0s;
+
+        .pd-form{
+            flex-grow: 1;
+        }
+
+        .continue-shopping{
+            background-color: #fff;
+            width: 150px;
+            transform-origin: right;
+            transform: scaleX(0);
+
+            animation-name: slideLeftAnimation;
+            animation-delay: 1.0s;
+            animation-iteration-count: 1;
+            animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+            animation-duration: 1.0s;
+        }
+    }
+}
+
+@keyframes slideDownAnimation {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpAnimation {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeftAnimation {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
