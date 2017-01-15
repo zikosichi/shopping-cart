@@ -1,0 +1,74 @@
+<div class="cf-wrapper">
+
+	<div *ngIf="loadingCheckout" class="cf-loading"></div>
+
+	<div *ngIf="showSuccessMessage" class="cf-success-msg">
+		We received your order. Thank you!
+	</div>
+
+	<div class="cf-photos">
+		<div class="cf-photos-content">
+		</div>
+	</div>
+
+	<div class="cf-details">
+		<div class="empty-cart-msg" *ngIf="!cartProducts.length">
+			<h2> Cart is empty </h2>
+			<p (click)="closeCheckout()"> <i class="fa fa-arrow-left" aria-hidden="true"></i> Add some products and come back </p>
+		</div>
+		<div *ngIf="cartProducts.length" class="summary">
+			<!--Prodcts list-->
+			<table>
+				<tr>
+					<th>Product</th>
+					<th>Qtty.</th>
+					<th align="right">Price</th>
+				</tr>
+				<tr *ngFor="let product of cartProducts">
+					<td>
+						<!--Product Item-->
+						<div class="product">
+							<div class="product__photo">
+								<img src="{{product.photoThumb}}" alt="">
+							</div>
+							<div class="product__details">
+								<h1>{{product.name}}</h1>
+								<p>{{product.description}}</p>
+								<h2> AED {{product.price}} </h2>
+							</div>
+						</div>
+					</td>
+					<td>
+						<!--Qtty spinner-->
+						<div class="qtty-spinner">
+							<button (click)="increaseQtty(product)"> <i class="fa fa-angle-up" aria-hidden="true"></i> </button>
+							<input [(ngModel)]="product.qtty" type="text">
+							<button (click)="decreaseQtty(product)"> <i class="fa fa-angle-down" aria-hidden="true"></i> </button>
+						</div>
+					</td>
+					<td align="right">{{product.qtty * product.price}}</td>
+				</tr>				
+			</table>
+
+			<!--Price summary-->
+			<div class="price-summary">
+				<h4> Subtotal Price <span>AED {{subtotalPrice()}}</span> </h4>
+				<h4> Shipping fee (Next business day delivery) <span>AED 15</span> </h4>
+				<h4> Total Price <span>AED {{subtotalPrice() + 15}}</span> </h4>
+			</div>
+
+			<!--Checkout button-->
+			<button class="checkout ss-btn" (click)="checkoutCart()">
+				Checkout
+			</button>
+		</div>
+
+
+		<div class="cf-continue-shopping" (click)="closeCheckout()">
+			<button>
+				<img src="./assets/close.svg" alt="">
+			</button>
+		</div>
+	</div>
+
+</div>

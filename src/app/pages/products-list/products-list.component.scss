@@ -13,6 +13,7 @@
         margin: 0 15px;
         text-decoration: none;
         position: relative;
+        cursor: pointer;
         &.active, &:hover{
             color: $color-primary;
             &:after{
@@ -36,18 +37,30 @@
     flex-wrap: wrap;
     justify-content: space-between;
     .product-item{
+        max-width: 47%;
         width: 270px;
         margin-bottom: 15px;
-        background-color: #fff;
-        img{
+        background-color: #fff;                
+        .img-wrapper{
+            text-align: center;
             display: block;
+            cursor: pointer;
             height: 325px;
-            background-color: #E5E5E5;
+            background-color: #F7F7F7;
+            overflow: hidden;
+            img{
+                max-height: 100%;
+                max-width: 100%;
+            }
         }
         h1{
+            cursor: pointer;
             font-size: 20px;
             color: $color-primary;
             font-weight: normal;
+            &:hover{
+                text-decoration: underline;
+            }            
         }
         .product-details{
             padding: 0 20px;
@@ -61,12 +74,19 @@
             }
             button{
                 font-size: 12px;
-                background-color: #D6D6D6;
+                background-color: $color-secondary;
+                color: #FFF;
+                font-weight: 200;
                 border: none;
                 padding: 7px 10px;
                 align-self: center;
                 cursor: pointer;
-                border-radius: 10px;
+                &:active{
+                    background-color: $color-secondary - 20;
+                }
+                &:hover{
+                    background-color: $color-secondary + 20;
+                }
             }
         }
         
@@ -77,5 +97,18 @@
         overflow: hidden;
         height: 0px;
         width: 270px;
+    }
+
+
+    @media screen and (max-width: $break-sm) {
+        padding: 5px;
+        .product-item{
+            .img-wrapper{
+                height: 250px;
+            }
+            h1{
+                font-size: 14px;
+            }
+        }
     }
 }

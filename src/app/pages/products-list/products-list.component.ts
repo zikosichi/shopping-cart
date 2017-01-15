@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ProductsService } from '../../services/products.service';
+import { CartService } from '../../services/cart.service';
+
+
 @Component({
   selector: 'app-products-list',
   templateUrl: './products-list.component.html',
@@ -7,13 +11,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsListComponent implements OnInit {
 
-  constructor() { }
+  private products: any[] = [];
+  private filters: string[] = ['ALL', 'WOMEN', 'MEN'];
+  private productsFilter: string = 'ALL';
 
-  private products: any[] = [1,2,3,4,5,67,7,8,9,9,3,3,2,7,2,3,5,6];
+  constructor(
+    private Products: ProductsService,
+    private cart: CartService
+  ) { }
+
 
   ngOnInit() {
-    console.log("asd");
-    
+
+    // Getting products
+    this.Products.getProducts().subscribe(
+      products => {
+        this.products = products.products;
+      },
+      error => console.error('Error: ' + error),
+      () => console.log('Completed!')
+    );
+  }
+
+  addProduct(product: any, event: any) {
+    this.cart.addProduct(product);
+    TweenMax.fromTo(event.target, 1, { backgroundColor: "#5ce23b" }, { backgroundColor: "#DC3522" });
+    TweenMax.fromTo(".checkout-badge", 1, { backgroundColor: "#5ce23b" }, { backgroundColor: "#4D4D4D" });
+  }
+
+  selectFilter(filter){
+    this.productsFilter = filter;
   }
 
 }

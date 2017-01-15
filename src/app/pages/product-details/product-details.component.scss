@@ -90,9 +90,34 @@
             overflow: hidden;
             background-color: rgba(#000, 0.8);
             color: #FFF;
+            cursor: pointer;
             transform-origin: right;
+            transition: background 0.3s;
+            &:hover{
+                background-color: rgba(#000, 0.7);
+            }
             p{
                 white-space: nowrap;
+            }
+        }
+    }
+
+    @media screen and (max-width: $break-sm) {
+        flex-direction: column;
+        overflow-y: auto;
+        .pd-photos{
+            flex-shrink: 0;
+            flex-basis: auto;
+            min-height: 325px;
+        }
+        .pd-details{
+            flex-direction: column;
+            .form{
+                max-width: 100%;
+            }
+            .continue-shopping{
+                flex-shrink: 0;
+                width: 100%;
             }
         }
     }

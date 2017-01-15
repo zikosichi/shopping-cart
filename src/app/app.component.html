@@ -2,25 +2,36 @@
 	<nav class="main-nav">
 		<div class="wrapper">
 			<div class="logo">
-				<h1>
+				<h1 [routerLink]="['products']">
 					Simple Shopping
 				</h1>
 			</div>
 
-			<div class="auth">
-				<a href="#"> Log In </a>
-				<a href="#"> Register </a>
+			<div class="auth" *ngIf="!user.user">
+				<a href="#" [routerLink]="['login', 'login']"> Log In </a>
+				<a href="#" [routerLink]="['login', 'register']"> Register </a>
 			</div>
 
-			<button class="checkout">
-				Checkout
+			<div class="auth" *ngIf="user.user">
+				<a> {{user.user.email}} </a>
+				<ul class="dropdown-menu">
+					<li>						
+						<a href="#" (click)="logOut()"> <i class="fa fa-power-off" aria-hidden="true"></i> Log Out </a>
+					</li>
+				</ul>
+			</div>
+
+			<button class="checkout" (click)="toggleCheckoutForm()">
+				<span class="hidden-xs"> Checkout </span>
 				<span class="icon">
 					<img src="./assets/shopping-bag.svg" alt="">
-					<span class="badge"> 3 </span>
+					<span *ngIf="cart.totalQtty" class="checkout-badge badge"> {{cart.totalQtty}} </span>
 				</span>
 			</button>
 		</div>
 	</nav>
+
+	<app-checkout-form (onClose)="removeCheckout()" #checoutForm *ngIf="checkoutVisible"></app-checkout-form>
 
 	<div class="main-content">
 		<router-outlet></router-outlet>

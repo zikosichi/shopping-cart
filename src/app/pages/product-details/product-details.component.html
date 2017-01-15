@@ -1,7 +1,7 @@
 <div class="pd-wrapper">
 	<div class="pd-photos">
 		<div class="pd-photos-content">
-			<img src="./assets/model.jpg" alt="">
+			<img src="{{product.photo}}" alt="">
 		</div>
 	</div>
 
@@ -9,18 +9,16 @@
 		<div class="form">
 			<div class="form__header">
 				<h1>
-					Fashion Sweater
-					<span>In MEN</span>
+					{{product.name}}
+					<span>In {{product.category}}</span>
 				</h1>
 				<a href="#"> <img src="./assets/heart.svg" alt=""> </a>
 			</div>
-			<h1 class="form__price">AED 45</h1>
+			<h1 class="form__price">AED {{product.price}}</h1>
 
 			<div class="form__description">
 				<h3>Description</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit expedita commodi soluta, obcaecati deserunt veniam excepturi.
-					Quibusdam perspiciatis illum deleniti, animi earum magnam asperiores tenetur expedita voluptate ullam minus?
-					</p>
+				<p>{{product.description}}</p>
 
 				<ul>
 					<li>Model Stats : Chest 99 cm, </li>
@@ -32,13 +30,12 @@
 				</ul>
 			</div>
 
-			<button class="form__add-to-bag ss-btn">
-				<!--<img class="ss-btn-icon" src="./assets/shopping-bag-white.svg" alt="">-->
+			<button (click)="addProduct(product, $event)" class="form__add-to-bag ss-btn">
 				Add To Bag
 			</button>
 
 		</div>
-		<div class="continue-shopping">
+		<div class="continue-shopping" (click)="closeDetails()">
 			<p>Continue Shopping</p>
 		</div>
 	</div>

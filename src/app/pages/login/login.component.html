@@ -1,0 +1,22 @@
+<div class="login-wrapper">
+  <div class="login">
+    <h1>{{isLoginPage ? 'Login' : 'Register'}}</h1>
+
+    <p class="error-msg" *ngIf="errorMsg">{{errorMsg}}</p>
+    <input placeholder="Enter email" [(ngModel)]="email" type="text">
+    <input placeholder="Password" [(ngModel)]="password" type="password">
+
+    <!--If it's login-->
+    <button [disabled]="!email || !password" *ngIf="isLoginPage" (click)="login()" class="ss-btn">
+      Login
+    </button>
+    <!--If it's Registration-->
+    <button [disabled]="!email || !password" *ngIf="!isLoginPage" (click)="register()" class="ss-btn" ng2di>
+      Register
+    </button>
+
+    <p *ngIf="!isLoginPage">Have an account <a href="#" [routerLink]="['/login', 'login']"> Log In </a></p>
+    <p *ngIf="isLoginPage">Don't have an account <a href="#" [routerLink]="['/login', 'register']"> Register </a></p>
+
+  </div>
+</div>
