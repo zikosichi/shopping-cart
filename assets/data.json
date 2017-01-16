@@ -1,0 +1,94 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Barbie T-shirt",
+            "description": "Lorem ipsum dolor santes chitovich",
+            "price": 45,
+            "photoThumb": "http://07fcfb85ff11d7f5d0fc-f4c51c056b0940e95f0098eed18ef033.r99.cf3.rackcdn.com/8204678GREYDARK-W16BRPH29-WIN16B176_01-554.jpg",
+            "photo": "http://07fcfb85ff11d7f5d0fc-f4c51c056b0940e95f0098eed18ef033.r99.cf3.rackcdn.com/8204678GREYDARK-W16BRPH29-WIN16B176_01-1200.jpg",
+            "category": "WOMEN"
+        },
+        {
+            "id": 2,
+            "name": "Barbie T-shirt White",
+            "description": "Lorem ipsum dolor santes chitovich",
+            "price": 45,
+            "photoThumb": "http://07fcfb85ff11d7f5d0fc-f4c51c056b0940e95f0098eed18ef033.r99.cf3.rackcdn.com/8204677CREAMLIGHT-W16BRPH01-WIN16B147_01-554.jpg",
+            "photo": "http://07fcfb85ff11d7f5d0fc-f4c51c056b0940e95f0098eed18ef033.r99.cf3.rackcdn.com/8204677CREAMLIGHT-W16BRPH01-WIN16B147_01-1200.jpg",
+            "category": "WOMEN"
+        },
+        {
+            "id": 3,
+            "name": "Barbie T-shirt White",
+            "description": "Lorem ipsum dolor santes chitovich",
+            "price": 45,
+            "photoThumb": "http://07fcfb85ff11d7f5d0fc-f4c51c056b0940e95f0098eed18ef033.r99.cf3.rackcdn.com/6.29235E+12-W16LCORE20-WIN16B108_01-554.jpg",
+            "photo": "http://07fcfb85ff11d7f5d0fc-f4c51c056b0940e95f0098eed18ef033.r99.cf3.rackcdn.com/6.29235E+12-W16LCORE20-WIN16B108_01-1200.jpg",
+            "category": "WOMEN"
+        },
+        {
+            "id": 4,
+            "name": "Barbie T-shirt White",
+            "description": "Lorem ipsum dolor santes chitovich",
+            "price": 45,
+            "photoThumb": "http://b5e5c3a678fc36efe569-cb4d9b36753931d3a50ee8db5dce45ff.r11.cf2.rackcdn.com/3012055REDMEDIUM-AWSPLIT-WIN16B31_01-554.jpg",
+            "photo": "http://b5e5c3a678fc36efe569-cb4d9b36753931d3a50ee8db5dce45ff.r11.cf2.rackcdn.com/3012055REDMEDIUM-AWSPLIT-WIN16B31_01-1200.jpg",
+            "category": "WOMEN"
+        },
+        {
+            "id": 5,
+            "name": "Barbie T-shirt White",
+            "description": "Lorem ipsum dolor santes chitovich",
+            "price": 45,
+            "photoThumb": "http://c5abc4268f20c3fb196a-e0075ca37ef156ad6af6d25f26069b92.r54.cf3.rackcdn.com/1405801-TP51-SSM16B102_01-554.jpg",
+            "photo": "http://c5abc4268f20c3fb196a-e0075ca37ef156ad6af6d25f26069b92.r54.cf3.rackcdn.com/1405801-TP51-SSM16B102_01-1200.jpg",
+            "category": "WOMEN"
+        },
+        {
+            "id": 6,
+            "name": "Barbie T-shirt White",
+            "description": "Lorem ipsum dolor santes chitovich",
+            "price": 45,
+            "photoThumb": "http://07fcfb85ff11d7f5d0fc-f4c51c056b0940e95f0098eed18ef033.r99.cf3.rackcdn.com/158769929-1677154-WIN16B176_01-554.jpg",
+            "photo": "http://07fcfb85ff11d7f5d0fc-f4c51c056b0940e95f0098eed18ef033.r99.cf3.rackcdn.com/158769929-1677154-WIN16B176_01-1200.jpg",
+            "category": "WOMEN"
+        },
+        {
+            "id": 7,
+            "name": "Barbie T-shirt White",
+            "description": "Lorem ipsum dolor santes chitovich",
+            "price": 45,
+            "photoThumb": "http://07fcfb85ff11d7f5d0fc-f4c51c056b0940e95f0098eed18ef033.r99.cf3.rackcdn.com/8204677CREAMLIGHT-W16BRPH01-WIN16B147_01-554.jpg",
+            "photo": "http://07fcfb85ff11d7f5d0fc-f4c51c056b0940e95f0098eed18ef033.r99.cf3.rackcdn.com/8204677CREAMLIGHT-W16BRPH01-WIN16B147_01-1200.jpg",
+            "category": "WOMEN"
+        },
+        {
+            "id": 8,
+            "name": "Barbie T-shirt White",
+            "description": "Lorem ipsum dolor santes chitovich",
+            "price": 45,
+            "photoThumb": "http://07fcfb85ff11d7f5d0fc-f4c51c056b0940e95f0098eed18ef033.r99.cf3.rackcdn.com/3408585BLUEMEDIUM-WSKIN10-WIN16B175_01-554.jpg",
+            "photo": "http://07fcfb85ff11d7f5d0fc-f4c51c056b0940e95f0098eed18ef033.r99.cf3.rackcdn.com/3408585BLUEMEDIUM-WSKIN10-WIN16B175_01-1200.jpg",
+            "category": "WOMEN"
+        },
+        {
+            "id": 9,
+            "name": "Barbie T-shirt White",
+            "description": "Lorem ipsum dolor santes chitovich",
+            "price": 45,
+            "photoThumb": "http://07fcfb85ff11d7f5d0fc-f4c51c056b0940e95f0098eed18ef033.r99.cf3.rackcdn.com/8510403MULTICOLORMULTISHADE-DD05228-WIN16B176_01-554.jpg",
+            "photo": "http://07fcfb85ff11d7f5d0fc-f4c51c056b0940e95f0098eed18ef033.r99.cf3.rackcdn.com/8510403MULTICOLORMULTISHADE-DD05228-WIN16B176_01-1200.jpg",
+            "category": "WOMEN"
+        },
+        {
+            "id": 10,
+            "name": "Barbie T-shirt White",
+            "description": "Lorem ipsum dolor santes chitovich",
+            "price": 45,
+            "photoThumb": "http://07fcfb85ff11d7f5d0fc-f4c51c056b0940e95f0098eed18ef033.r99.cf3.rackcdn.com/3012473CREAMMEDIUM-AWGTA009-WIN16B184_01-554.jpg",
+            "photo": "http://07fcfb85ff11d7f5d0fc-f4c51c056b0940e95f0098eed18ef033.r99.cf3.rackcdn.com/3012473CREAMMEDIUM-AWGTA009-WIN16B184_01-1200.jpg",
+            "category": "WOMEN"
+        }
+    ]
+}
