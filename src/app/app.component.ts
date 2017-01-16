@@ -14,6 +14,7 @@ export class AppComponent {
 
 	@ViewChild('checoutForm') checkout: CheckoutFormComponent;
 	private checkoutVisible: boolean = false;
+	private dropdownVisible: boolean = false;
 
 	constructor (private router:Router, private cart:CartService, private user:UserService){
 		var self = this;
@@ -27,7 +28,7 @@ export class AppComponent {
 		var self = this;
 		
 		// Do not show checkout form if we are on login page
-		if (this.router.url == '/login/login' || this.router.url == '/login/register'){ return false; }
+		// if (this.router.url == '/login/login' || this.router.url == '/login/register'){ return false; }
 		
 		// If we are going to show checkout form we just make it visible
 		// If we are hiding it first we need to animate and then remove it
@@ -49,5 +50,9 @@ export class AppComponent {
 	private logOut(){
 		this.user.logOut();
 		this.router.navigate(['/']);
+	}
+
+	private toggleDropdown(){
+		this.dropdownVisible = !this.dropdownVisible;
 	}
 }

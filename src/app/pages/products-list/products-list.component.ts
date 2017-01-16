@@ -26,7 +26,7 @@ export class ProductsListComponent implements OnInit {
     // Getting products
     this.Products.getProducts().subscribe(
       products => {
-        this.products = products.products;
+        this.products = products.val().products;
       },
       error => console.error('Error: ' + error),
       () => console.log('Completed!')

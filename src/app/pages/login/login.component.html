@@ -3,7 +3,7 @@
     <h1>{{isLoginPage ? 'Login' : 'Register'}}</h1>
 
     <p class="error-msg" *ngIf="errorMsg">{{errorMsg}}</p>
-    <input placeholder="Enter email" [(ngModel)]="email" type="text">
+    <input placeholder="Enter email" [(ngModel)]="email" type="email">
     <input placeholder="Password" [(ngModel)]="password" type="password">
 
     <!--If it's login-->

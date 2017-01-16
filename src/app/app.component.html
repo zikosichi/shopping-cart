@@ -12,9 +12,9 @@
 				<a href="#" [routerLink]="['login', 'register']"> Register </a>
 			</div>
 
-			<div class="auth" *ngIf="user.user">
+			<div class="auth" *ngIf="user.user" (click)="toggleDropdown()">
 				<a> {{user.user.email}} </a>
-				<ul class="dropdown-menu">
+				<ul class="dropdown-menu" *ngIf="dropdownVisible">
 					<li>						
 						<a href="#" (click)="logOut()"> <i class="fa fa-power-off" aria-hidden="true"></i> Log Out </a>
 					</li>
