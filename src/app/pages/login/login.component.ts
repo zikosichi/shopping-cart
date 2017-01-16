@@ -72,7 +72,7 @@ export class LoginComponent implements OnInit {
 		})
 			.then(function (response) {
 				self.user.login(response.uid, self.email);
-				this.router.navigate(['/']);
+				self.router.navigate(['/']);
 			})
 			.catch((ex: any) => {
 				if (ex.code == "auth/email-already-in-use") {
