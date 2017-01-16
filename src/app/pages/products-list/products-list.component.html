@@ -5,6 +5,10 @@
 	<router-outlet></router-outlet>
 	<div class="products-wrapper">
 
+		<div class="loading-products" *ngIf="!products.length">
+			<img src="./assets/loading.gif" alt="">
+		</div>
+
 		<!--<div class="product-item" *ngFor="let poduct of products">-->
 		<div class="product-item" *ngFor="let product of products | productsFilter:productsFilter; let i = index">
 			<div class="img-wrapper" [routerLink]="['product-details', product.id]">

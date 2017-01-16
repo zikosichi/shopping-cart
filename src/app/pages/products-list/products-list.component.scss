@@ -37,6 +37,15 @@
     flex-wrap: wrap;
     position: relative;
     justify-content: space-between;
+    .loading-products{
+        margin-top: 100px;
+        text-align: center;
+        width: 100%;
+        img{
+            width: 50px;
+            height: auto;
+        }
+    }
     .product-item{
         // max-width: calc(45% - 20px);
         width: 270px;
