@@ -35,9 +35,10 @@
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     justify-content: space-between;
     .product-item{
-        max-width: 47%;
+        // max-width: calc(45% - 20px);
         width: 270px;
         margin-bottom: 15px;
         background-color: #fff;                
@@ -103,8 +104,9 @@
     @media screen and (max-width: $break-sm) {
         padding: 5px;
         .product-item{
+            width: 100%;
             .img-wrapper{
-                height: 250px;
+                // height: 250px;
             }
             h1{
                 font-size: 14px;

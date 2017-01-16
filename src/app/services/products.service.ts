@@ -12,7 +12,7 @@ export class ProductsService {
   constructor(private http: Http) { }
 
   getProducts() {
-    return this.http.get('./app/data.json')
+    return this.http.get('./assets/data.json')
       .map(response => response.json());
   }
 

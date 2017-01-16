@@ -105,6 +105,7 @@
     @media screen and (max-width: $break-sm) {
         flex-direction: column;
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
         .pd-photos{
             flex-shrink: 0;
             flex-basis: auto;

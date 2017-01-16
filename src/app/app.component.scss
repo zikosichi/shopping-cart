@@ -8,6 +8,8 @@
     flex-direction: column;
 }
 .main-nav{
+    min-height: 0;
+    flex-shrink: 0;
     background-color: #FFF;
     position: relative;
     z-index: 10;
@@ -119,4 +121,6 @@
 .main-content{
     flex-grow: 1;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
 }

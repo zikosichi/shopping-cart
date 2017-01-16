@@ -83,6 +83,7 @@
         .summary{
             width: 100%;
             overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
             padding: 20px;        
             table{
                 width: 100%;
@@ -206,6 +207,7 @@
     @media screen and (max-width: $break-sm) {
         flex-direction: column;
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
         .cf-photos{
             display: none;
             // flex-shrink: 0;
@@ -213,6 +215,7 @@
             // min-height: 325px;
         }
         .cf-details{
+            flex-grow: 1;
             flex-direction: column;
             flex-basis: auto;
             .summary{
