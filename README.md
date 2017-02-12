@@ -1,8 +1,28 @@
 # ShoppingCart
+This is a simple shopping cart module built with Angular 2 & Firebase
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
+
+# Used Technologies
+● Angular 2 - Core framework
+● Greensock GSAP - Animation library
+● SASS - preprocessor
+● Firebase - backend & DB
+● Used templates (themes) - NONE
+
+
+# Design
+Design is very simple and clean. I used Adobe XD for designing the UI.
+
+Color Scheme:
+Black - Primary color - promotes: power, edginess, sophistication
+Red - Secondary color - promotes: power, importance, youth
+
 
 ## Development server
+Install Angular CLI [angular-cli](https://github.com/angular/angular-cli)
+
+`npm i angular-cli@latest`
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
