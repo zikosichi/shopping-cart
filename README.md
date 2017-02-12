@@ -4,9 +4,13 @@ This is a simple shopping cart module built with Angular 2 & Firebase
 
 # Used Technologies
 ● Angular 2 - Core framework
+
 ● Greensock GSAP - Animation library
+
 ● SASS - preprocessor
+
 ● Firebase - backend & DB
+
 ● Used templates (themes) - NONE
 
 
